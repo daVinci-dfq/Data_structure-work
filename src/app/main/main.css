@@ -1,0 +1,39 @@
+.maze {
+  display: grid;
+  gap: 1px;
+  background: #eee;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  grid-template-columns: repeat(20, 20px);
+}
+
+.maze-row {
+  display: contents;
+}
+
+.maze-cell {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  position: relative;
+}
+
+.wall {
+  position: absolute;
+  background: #000;
+}
+
+.wall.right {
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+}
+
+.wall.bottom {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+}
