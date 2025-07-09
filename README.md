@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 应用等价类生成随机迷宫并寻找迷宫路径
 
-## Getting Started
+> 山东大学数据结构课程设计
+>
+> ~~本来应该是利用暑假时间完成，结果是暑假只知道玩，知道开学才发现仅仅有四天的时间来完成这个课设，所以仓促之际草草地完成了这个简单的任务，痛苦，痛哭。~~
 
-First, run the development server:
+## 题目要求
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+问题描述：
+使用等价类来构造一个 `N * N` 的从左上角到右下角只有一条路径的随机迷宫，然后在这一迷宫上寻找迷宫路径。
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+该设计共包含如下四个部分：
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. 等价类数据结构的设计和实现
+2. 构建随机迷宫
+3. 寻找迷宫路径
+4. 将迷宫和路径用图形方式画出 
+   用图形方式将上述算法获得的随机迷宫及其上的最短路径画出。用线段来表示迷宫中的墙，用在每个方格中心的点来表示路径。
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 整体描述
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- 采用 `Web` 的展示方式，使用 `Next.js` 完成开发。
+- 由于时间太过紧促，个人水平太过捉襟见肘，只能简单写一个小小的前端界面，内部设计了简单的逻辑完成基本要求。
